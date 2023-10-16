@@ -1,0 +1,38 @@
+[
+    {
+      "titulo": "Polera Zeus Negra",
+      "imagen": "./img/polera-negra.png",
+      "precio": 15000
+    },
+    {
+      "titulo": "Polera Zeus Blanca",
+      "imagen": "img/polera-blanca.png",
+      "precio": 15000
+    },
+    {
+      "titulo": "Conjunto Celeste",
+      "imagen": "img/Conjunto-celeste.JPG",
+      "precio": 35000
+    },
+    {
+      "titulo": "Conjunto Negro",
+      "imagen": "img/conjunto-negro.png",
+      "precio": 35000
+    },
+    {
+      "titulo": "Conjunto Gris",
+      "imagen": "img/conjunto-gris.png",
+      "precio": 35000
+    },
+    {
+      "titulo": "Gorra Blanca",
+      "imagen": "img/gorra-A.png",
+      "precio": 10000
+    },
+    {
+      "titulo": "Gorra Negra",
+      "imagen": "img/gorra-B.png",
+      "precio": 10000
+    }
+  ]
+  
