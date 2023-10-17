@@ -105,7 +105,8 @@ header h1{
     padding: 20px;
 }
 .carrito .carrito-item img{
-    margin-right: 20px;
+    margin: 5px;
+    width: 50px;
 }
 .carrito .carrito-item .carrito-item-titulo{
     display: block;
