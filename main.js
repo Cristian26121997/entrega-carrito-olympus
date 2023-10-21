@@ -1,18 +1,27 @@
 let carritoVisible = false;
 let productos = [];
-let carrito = [];  // Variable para almacenar los productos en el carrito
+let carrito = [];  
 
 document.addEventListener('DOMContentLoaded', () => {
     init();
 });
 
 function init() {
+    cargarCarritoDesdeLocalStorage(); 
     cargarDatosDesdeJSON().then(data => {
         productos = data;
         setupEventListeners();
     }).catch(error => {
         console.error('Error al cargar los datos:', error);
     });
+}
+
+function cargarCarritoDesdeLocalStorage() {
+    const carritoGuardado = localStorage.getItem('carrito');
+    if (carritoGuardado) {
+        carrito = JSON.parse(carritoGuardado);
+        actualizarCarrito();
+    }
 }
 
 function setupEventListeners() {
@@ -148,9 +157,7 @@ function actualizarCarrito() {
     botonesRestarCantidad.forEach(button => {
         button.addEventListener('click', restarCantidad);
     });
+
+    // Guardar el carrito actual en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }
-
-
-
-
-
